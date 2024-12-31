@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            top: 0;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .content {
+            padding: 80px 20px 20px;
+            background-color: #fff;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        h3 {
+            margin-top: 30px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .code-block {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #333;
+            overflow-x: auto;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Learn HTML and CSS</h1>
+        <p>A comprehensive guide to building and styling web pages</p>
+    </header>
+
+    <section class="content">
+        <h2>What is HTML?</h2>
+        <p><strong>HTML</strong> stands for HyperText Markup Language. It is used to create the structure of web pages by defining elements like text, images, links, and forms.</p>
+
+        <h3>Basic HTML Structure</h3>
+        <p>Every HTML document begins with a doctype declaration, followed by the `<html>`, `<head>`, and `<body>` tags. The `<head>` contains meta-information like the title, while the `<body>` holds the visible content.</p>
+
+        <div class="code-block">
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first web page created using HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+
+        <h3>Common HTML Tags</h3>
+        <ul>
+            <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong>: Headings, where <strong>&lt;h1&gt;</strong> is the largest and <strong>&lt;h6&gt;</strong> is the smallest.</li>
+            <li><strong>&lt;p&gt;</strong>: Defines a paragraph of text.</li>
+            <li><strong>&lt;a href="URL"&gt;</strong>: Defines a hyperlink to another page.</li>
+            <li><strong>&lt;img src="image.jpg"&gt;</strong>: Embeds an image on the page.</li>
+            <li><strong>&lt;ul&gt; and &lt;ol&gt;</strong>: Creates unordered and ordered lists respectively.</li>
+            <li><strong>&lt;form&gt;</strong>: Defines a form for user input.</li>
+            <li><strong>&lt;div&gt;</strong>: A container for other HTML elements, often used for layout purposes.</li>
+            <li><strong>&lt;span&gt;</strong>: A generic inline container for text or other inline elements.</li>
+        </ul>
+
+        <h2>What is CSS?</h2>
+        <p><strong>CSS</strong> stands for Cascading Style Sheets. It is used to control the presentation (design) of a web page by applying styles like color, layout, fonts, and spacing.</p>
+
+        <h3>CSS Syntax</h3>
+        <p>CSS is written as a set of rules consisting of a <strong>selector</strong> and a <strong>declaration block</strong>. The selector targets HTML elements, while the declaration block contains the styling properties to apply.</p>
+
+        <div class="code-block">
+            <pre>
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: gray;
+}
+            </pre>
+        </div>
+
+        <h3>Common CSS Properties</h3>
+        <ul>
+            <li><strong>color</strong>: Sets the text color.</li>
+            <li><strong>font-size</strong>: Defines the size of the font.</li>
+            <li><strong>background-color</strong>: Sets the background color of an element.</li>
+            <li><strong>margin</strong>: Adds space around an element.</li>
+            <li><strong>padding</strong>: Adds space inside an element.</li>
+            <li><strong>text-align</strong>: Aligns the text (left, center, right).</li>
+            <li><strong>border</strong>: Adds a border around an element.</li>
+            <li><strong>display</strong>: Controls the display behavior of an element (e.g., block, inline, flex).</li>
+        </ul>
+
+        <h3>Combining HTML and CSS</h3>
+        <p>You can combine HTML and CSS by linking an external CSS file to the HTML document, embedding CSS in the `<head>` section, or using inline CSS within an HTML tag.</p>
+
+        <h4>Example of External CSS</h4>
+        <div class="code-block">
+            <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;p&gt;This page is styled using an external CSS file.&lt;/p&gt;
+            </pre>
+        </div>
+
+        <h4>Example of Inline CSS</h4>
+        <div class="code-block">
+            <pre>
+&lt;h1 style="color: green; text-align: center;"&gt;Hello, World!&lt;/h1&gt;
+            </pre>
+        </div>
+
+        <h4>Example of Internal CSS</h4>
+        <div class="code-block">
+            <pre>
+&lt;style&gt;
+  h1 {
+    color: red;
+    font-size: 2em;
+  }
+&lt;/style&gt;
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+            </pre>
+        </div>
+
+        <h2>Advanced HTML Tags</h2>
+        <h3>Forms</h3>
+        <p>Forms allow users to input data. Below is an example of an HTML form:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;form action="submit_form.php" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <h3>Multimedia Tags</h3>
+        <p>You can embed images, audio, and video in your web page:</p>
+
+        <div class="code-block">
+            <pre>
+&lt;img src="image.jpg" alt="Description"&gt;
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+            </pre>
+        </div>
+
+        <h3>HTML5 Semantic Elements</h3>
+        <p>HTML5 introduced several new semantic elements to improve the structure and accessibility of web pages. These include:</p>
+        <ul>
+            <li><strong>&lt;header&gt;</strong>: Represents introductory content or navigation links.</li>
+            <li><strong>&lt;article&gt;</strong>: Represents an independent piece of content.</li>
+            <li><strong>&lt;section&gt;</strong>: Represents a section of content.</li>
+            <li><strong>&lt;footer&gt;</strong>: Represents footer content.</li>
+            <li><strong>&lt;nav&gt;</strong>: Represents navigation links.</li>
+            <li><strong>&lt;aside&gt;</strong>: Represents content that is tangentially related to the main content.</li>
+            <li><strong>&lt;main&gt;</strong>: Represents the main content of the document.</li>
+        </ul>
+
+        <h2>Advanced CSS: Flexbox and Grid Layouts</h2>
+        <p>CSS Flexbox and Grid are powerful layout tools that allow you to create complex and responsive layouts easily.</p>
+
+        <h3>Flexbox Example</h3>
+        <div class="code-block">
+            <pre>
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+            </pre>
+        </div>
+
+        <h3>CSS Grid Example</h3>
+        <div class="code-block">
+            <pre>
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+            </pre>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 K.M Computers | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

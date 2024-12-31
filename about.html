@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0C1A3A, #5285E8);
+            color: #EAEAEA;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #5285e8, #333);
+            padding: 10px 30px;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .navbar .logo {
+            margin-right: 650px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            font-size: 28px;
+            font-weight: bold;
+            color: #FFD700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .navbar img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #C0C0C0;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .navbar ul li a:hover {
+            color: #FFD700;
+            transform: scale(1.1);
+        }
+
+        .navbar ul li a i {
+            font-size: 20px;
+        }
+
+        .owner-container {
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .owner-header {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-in-out;
+            color: #FFD700;
+        }
+
+        .owner-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .owner-details {
+            font-size: 18px;
+            color: #F8F9FA;
+            margin-top: 15px;
+            max-width: 600px;
+        }
+
+        .owner-details h3 {
+            font-size: 24px;
+            color: #FFD700;
+        }
+
+        .key-points {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .key-point {
+            background: #192A4D;
+            border-radius: 12px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .key-point:hover {
+            transform: translateY(-8px);
+        }
+
+        .key-point h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #FFD700;
+        }
+
+        .key-point p {
+            font-size: 16px;
+            color: #C0C0C0;
+        }
+
+        .quotes-section {
+            margin-top: 30px;
+            font-size: 18px;
+            font-style: italic;
+            color: #FFD700;
+            animation: fadeInUp 1s ease-in-out;
+            text-align: center;
+        }
+
+        .about-container {
+            padding: 40px 20px;
+            background: #192A4D;
+            color: #F8F9FA;
+            text-align: center;
+        }
+
+        .about-content {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer {
+            background: #111;
+            color: #C0C0C0;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .key-points {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .key-point {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <img src="./logo.png" alt="" srcset="">
+        <div class="logo">K.M Infotech</div>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="education section/education.html"><i class="fas fa-info-circle"></i>Education</a></li>
+            <li><a href="service.html"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="owner-container">
+        <img src="WhatsApp Image 2024-12-28 at 22.36.13.jpeg" alt="Owner" class="owner-image">
+        <div class="owner-details">
+            <h3>Ajay Kumar</h3>
+            <p>Founder & CEO (K.M Infotech)</p>
+            <p>With a vision to deliver top-quality solutions, Ajay Kumar founded this company with a commitment to
+                innovation, collaboration, and excellence. His dedication to achieving the highest standards is the
+                foundation of our success.</p>
+        </div>
+    </div>
+
+    <!-- Key Points Section -->
+    <div class="key-points">
+        <div class="key-point">
+            <h3>Customer Focus</h3>
+            <p>We put our customers at the center of everything we do, ensuring their satisfaction with every project.
+            </p>
+        </div>
+        <div class="key-point">
+            <h3>Excellence</h3>
+            <p>We strive for excellence, delivering only the highest quality products and services to our clients.</p>
+        </div>
+        <div class="key-point">
+            <h3>Innovation</h3>
+            <p>We embrace new ideas and technologies to create innovative solutions that set us apart in the industry.
+            </p>
+        </div>
+    </div>
+
+    <!-- Customer Attracting Quotes Section -->
+    <div class="quotes-section">
+        <p>"Your success is our mission. Let's achieve greatness together!"</p>
+        <p>"Innovation, dedication, and collaboration — the pillars of our journey."</p>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-container">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>We are a company driven by a passion for innovation and excellence. Our mission is to provide top-notch
+                solutions that meet the diverse needs of our clients. With a focus on customer satisfaction, we aim to
+                build long-lasting relationships and deliver impactful results.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 K.M Infotech All Rights Reserved.</p>
+        <p>Follow us on <a href="#" style="color: #FFD700; text-decoration: none;">Social Media</a></p>
+    </div>
+</body>
+
+</html>

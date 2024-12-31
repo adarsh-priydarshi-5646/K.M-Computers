@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Mastery: All Functions, Formulas, and Techniques</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .content {
+            flex: 1;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        strong {
+            color: #007BFF;
+        }
+
+        .code-block {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #333;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .example-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .section {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+
+        .section img {
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Excel Mastery: All Functions, Formulas, and Techniques</h1>
+        <p>Learn the complete range of Excel functions, formulas, and techniques to become an expert at data analysis, automation, and productivity!</p>
+    </header>
+
+    <section class="content">
+        <div class="container">
+
+            <!-- Basic Excel Functions -->
+            <div class="section">
+                <h2>Basic Excel Functions</h2>
+                <ul>
+                    <li><strong>SUM:</strong>
+                        <div class="code-block">
+                            =SUM(A1:A5)
+                        </div>
+                        Adds values in the range A1 to A5.
+                    </li>
+                    <li><strong>AVERAGE:</strong>
+                        <div class="code-block">
+                            =AVERAGE(A1:A5)
+                        </div>
+                        Calculates the average of the numbers in the range A1 to A5.
+                    </li>
+                    <li><strong>MIN/MAX:</strong>
+                        <div class="code-block">
+                            =MIN(A1:A5)
+                        </div>
+                        Returns the smallest value in the range A1 to A5.
+                    </li>
+                    <li><strong>COUNT:</strong>
+                        <div class="code-block">
+                            =COUNT(A1:A5)
+                        </div>
+                        Counts the number of numeric entries in the range A1 to A5.
+                    </li>
+                    <li><strong>IF:</strong>
+                        <div class="code-block">
+                            =IF(A1 > 10, "Yes", "No")
+                        </div>
+                        Returns "Yes" if the value in A1 is greater than 10, otherwise "No".
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Logical Functions -->
+            <div class="section">
+                <h2>Logical Functions</h2>
+                <ul>
+                    <li><strong>AND:</strong>
+                        <div class="code-block">
+                            =AND(A1 > 10, B1 < 5)
+                        </div>
+                        Returns TRUE if both conditions are met.
+                    </li>
+                    <li><strong>OR:</strong>
+                        <div class="code-block">
+                            =OR(A1 > 10, B1 < 5)
+                        </div>
+                        Returns TRUE if at least one condition is met.
+                    </li>
+                    <li><strong>NOT:</strong>
+                        <div class="code-block">
+                            =NOT(A1 > 10)
+                        </div>
+                        Reverses the TRUE/FALSE result of a condition.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Lookup Functions -->
+            <div class="section">
+                <h2>Lookup Functions</h2>
+                <ul>
+                    <li><strong>VLOOKUP:</strong>
+                        <div class="code-block">
+                            =VLOOKUP(A2, B2:D10, 3, FALSE)
+                        </div>
+                        Looks for a value in the first column of a range and returns a value from a specified column.
+                    </li>
+                    <li><strong>HLOOKUP:</strong>
+                        <div class="code-block">
+                            =HLOOKUP(A2, B1:D10, 3, FALSE)
+                        </div>
+                        Similar to VLOOKUP, but searches horizontally.
+                    </li>
+                    <li><strong>INDEX & MATCH:</strong>
+                        <div class="code-block">
+                            =INDEX(C2:C10, MATCH(E2, B2:B10, 0))
+                        </div>
+                        More flexible than VLOOKUP; finds a value based on row/column lookup.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Text Functions -->
+            <div class="section">
+                <h2>Text Functions</h2>
+                <ul>
+                    <li><strong>CONCATENATE:</strong>
+                        <div class="code-block">
+                            =CONCATENATE(A1, " ", B1)
+                        </div>
+                        Joins the values in cells A1 and B1 with a space in between.
+                    </li>
+                    <li><strong>LEFT/RIGHT:</strong>
+                        <div class="code-block">
+                            =LEFT(A1, 5)
+                        </div>
+                        Extracts the leftmost 5 characters from A1.
+                    </li>
+                    <li><strong>MID:</strong>
+                        <div class="code-block">
+                            =MID(A1, 3, 5)
+                        </div>
+                        Extracts 5 characters from the middle of the text in A1, starting from the 3rd character.
+                    </li>
+                    <li><strong>TRIM:</strong>
+                        <div class="code-block">
+                            =TRIM(A1)
+                        </div>
+                        Removes extra spaces from the text in A1.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Date and Time Functions -->
+            <div class="section">
+                <h2>Date and Time Functions</h2>
+                <ul>
+                    <li><strong>NOW:</strong>
+                        <div class="code-block">
+                            =NOW()
+                        </div>
+                        Returns the current date and time.
+                    </li>
+                    <li><strong>DATE:</strong>
+                        <div class="code-block">
+                            =DATE(2024, 12, 31)
+                        </div>
+                        Returns a date from the given year, month, and day.
+                    </li>
+                    <li><strong>YEAR/MONTH/DAY:</strong>
+                        <div class="code-block">
+                            =YEAR(A1), =MONTH(A1), =DAY(A1)
+                        </div>
+                        Extracts the year, month, or day from a date in A1.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Advanced Excel Functions -->
+            <div class="section">
+                <h2>Advanced Excel Functions</h2>
+                <ul>
+                    <li><strong>SUMIFS:</strong>
+                        <div class="code-block">
+                            =SUMIFS(C2:C10, B2:B10, "Product A", A2:A10, ">10")
+                        </div>
+                        Sums the values in C2:C10 where the conditions are met.
+                    </li>
+                    <li><strong>COUNTIFS:</strong>
+                        <div class="code-block">
+                            =COUNTIFS(A2:A10, ">10", B2:B10, "Product A")
+                        </div>
+                        Counts the values based on multiple conditions.
+                    </li>
+                    <li><strong>OFFSET:</strong>
+                        <div class="code-block">
+                            =OFFSET(A1, 3, 2)
+                        </div>
+                        Returns the value of a cell offset from another.
+                    </li>
+                    <li><strong>INDIRECT:</strong>
+                        <div class="code-block">
+                            =INDIRECT("A1")
+                        </div>
+                        Returns the value of a cell referenced by a string.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h2>Excel Data Visualization: Charts & Graphs</h2>
+        <img src="https://zebrabi.com/wp-content/uploads/2023/05/bad-example-4-1.webp" alt="Excel Chart Example" class="example-img">
+        <p>Use Excel charts to visualize data, such as line, bar, and pie charts for better insights.</p>
+
+        <h2>Excel Automation: Macros and VBA</h2>
+        <p>Automate repetitive tasks in Excel by recording macros or writing VBA code. This can save significant time and effort.</p>
+
+        <h3>Example Macro:</h3>
+        <div class="code-block">
+            Sub HighlightCells()<br>
+            Dim cell As Range<br>
+            For Each cell In Range("A1:A10")<br>
+            If cell.Value > 10 Then<br>
+            cell.Interior.Color = RGB(255, 0, 0)<br>
+            End If<br>
+            Next cell<br>
+            End Sub
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 K.M Computers  All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

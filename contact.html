@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Feedback</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0C1A3A, #5285E8);
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            background: #192A4D;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .input-field {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .input-field input,
+        .input-field textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #354766;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+            background: #253859;
+            color: #fff;
+            transition: all 0.3s;
+        }
+
+        .input-field input::placeholder,
+        .input-field textarea::placeholder {
+            color: #A5B1CD;
+        }
+
+        .input-field input:focus,
+        .input-field textarea:focus {
+            border-color: #5285E8;
+            background: #2A3B5F;
+        }
+
+        .input-field textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 24px;
+            color: #A5B1CD;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .star-rating input:checked~label,
+        .star-rating label:hover,
+        .star-rating label:hover~label {
+            color: #FFD700;
+        }
+
+        .btn {
+            background: #5285E8;
+            color: #fff;
+            padding: 12px 18px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #2a5298;
+        }
+
+        .map-box {
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 250px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .contact-details {
+            margin-top: 20px;
+            text-align: center;
+            color: #A5B1CD;
+        }
+
+        .contact-details h3 {
+            font-size: 22px;
+            color: #FFD700;
+        }
+
+        .contact-details p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Contact & Feedback</h2>
+        <form action="#" method="POST">
+            <div class="input-field">
+                <input type="text" name="fullname" placeholder="Your Name" required>
+            </div>
+            <div class="input-field">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-field">
+                <textarea name="message" placeholder="Your Message or Feedback" required></textarea>
+            </div>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <div class="map-box">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sin!4v1735401114453!5m2!1sen!2sin!6m8!1m7!1sgPTVGQqftOq4VYaCNaL2Fg!2m2!1d26.14327698690746!2d81.40941565995068!3f81.98447491522538!4f-3.3320470458718177!5f0.9910616943914228"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- Contact & Address Details Below the Map -->
+        <div class="contact-details">
+            <h3>Contact Information</h3>
+            <p>Email: contact@company.com</p>
+            <p>Phone: +1-123-456-7890</p>
+            <h3>Address</h3>
+            <p>K.M Computers Near Primary School Fursatganj Road</p>
+            <p>Deeh Raebareli U.P 229310</p>
+        </div>
+    </div>
+</body>
+
+</html>

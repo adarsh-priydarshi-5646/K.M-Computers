@@ -1,0 +1,193 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-group button:hover {
+            background-color: #218838;
+        }
+
+        .form-group .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Student Enrollment Form</h1>
+    </header>
+
+    <div class="container">
+        <h2>Enroll for Your Desired Course</h2>
+        <form id="enrollmentForm">
+            <div class="form-group">
+                <label for="studentName">Full Name</label>
+                <input type="text" id="studentName" name="studentName" required placeholder="Enter your full name">
+                <div class="error" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                <div class="error" id="phoneError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option value="Excel Mastery">Excel Mastery</option>
+                    <option value="Tally Accounting">Tally Accounting</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MS Office Proficiency">MS Office Proficiency</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Cybersecurity Basics">Cybersecurity Basics</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                </select>
+                <div class="error" id="courseError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals or any special requirements"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Enroll Now</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('enrollmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let isValid = true;
+
+            // Clear previous errors
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('phoneError').textContent = '';
+            document.getElementById('courseError').textContent = '';
+
+            // Validate Name
+            const name = document.getElementById('studentName').value;
+            if (name === '') {
+                document.getElementById('nameError').textContent = 'Name is required.';
+                isValid = false;
+            }
+
+            // Validate Email
+            const email = document.getElementById('email').value;
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!email.match(emailRegex)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email.';
+                isValid = false;
+            }
+
+            // Validate Phone
+            const phone = document.getElementById('phone').value;
+            const phoneRegex = /^[0-9]{10}$/;
+            if (!phone.match(phoneRegex)) {
+                document.getElementById('phoneError').textContent = 'Phone number must be 10 digits.';
+                isValid = false;
+            }
+
+            // Validate Course Selection
+            const course = document.getElementById('course').value;
+            if (course === '') {
+                document.getElementById('courseError').textContent = 'Please select a course.';
+                isValid = false;
+            }
+
+            // If all validations pass
+            if (isValid) {
+                alert('Enrollment Successful!');
+                document.getElementById('enrollmentForm').reset();
+            }
+        });
+    </script>
+
+</body>
+
+</html> -->

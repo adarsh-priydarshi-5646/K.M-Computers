@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #8e44ad, #3498db);
+            color: #34495e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(245, 245, 245, 0.8));
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            border-image-source: linear-gradient(135deg, #b2fefa, #f0ffff);
+            border-image-slice: 1;
+            text-align: center;
+            animation: glowing-border 3s infinite alternate;
+            border-radius: 20px;
+        }
+
+        .laptop {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .images {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .images img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            flex: 2;
+            text-align: left;
+        }
+
+        .details h1 {
+            margin: 0 0 10px;
+            color: #2c3e50;
+        }
+
+        .details p {
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .cta-buttons a {
+            text-decoration: none;
+            margin-right: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #2c7a7b;
+            transition: background-color 0.3s;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #225f61;
+        }
+
+        .more-details {
+            margin-top: 20px;
+        }
+
+        .more-details h2 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .more-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .more-details ul li {
+            margin: 5px 0;
+            color: #34495e;
+        }
+
+        .contact-details {
+            margin-top: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .contact-details h2 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .contact-details a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="laptop">
+            <div class="images">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/8/446316431/HP/KF/EO/100841254/dell-e5450-i5-5th-gen-laptop-500x500.jpg"
+                    alt="Laptop Front View">
+                <img src="https://technoist.in/wp-content/uploads/2024/09/61m3tjPSL-L._SL1500_.jpg"
+                    alt="Laptop Side View">
+                <img src="https://m.media-amazon.com/images/I/31w1TgkGjSL.jpg"
+                    alt="Laptop Back View">
+            </div>
+            <div class="details">
+                <h1>Dell Latitude E5450 Laptop</h1>
+                <p><strong>Specifications:</strong></p>
+                <ul>
+                    <li>Brand: Dell</li>
+                    <li>Colour: Black</li>
+                    <li>Processor: Intel Core i5-5287U</li>
+                    <li>RAM: 8GB DDR4</li>
+                    <li>Storage: 256GB SSD</li>
+                    <li>Display: 14 Inches</li>
+                    <li>Operating System: Windows 10 Home</li>
+                    <li>Ports: USB 3.2, HDMI, SD card reader</li>
+                </ul>
+                <p class="price">Price: ₹16,999</p>
+                <div class="cta-buttons">
+                    <a href="../laptop buy/buy1.html">Buy Now</a>
+                </div>
+                <div class="more-details">
+                    <h2>Additional Features:</h2>
+                    <ul>
+                        <li>Backlit Keyboard for ease of use in low-light conditions</li>
+                        <li>Anti-glare display for better visibility</li>
+                        <li>Integrated webcam with noise reduction</li>
+                        <li>Pre-installed Microsoft Office Home & Student 2021</li>
+                    </ul>
+                </div>
+                <div class="contact-details">
+                    <h2>Contact Details:</h2>
+                    <p>Phone: +91-9876543210</p>
+                    <p>Email: <a href="mailto:kmcomputers9@gmail.com">kmcomputers9@gmail.com.com</a></p>
+                    <p>Google Form: <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSd-OJIcGJyMmv0amm4NYfLJwWwLVxSrkTE1LzF2uUi3TRd5Xw/viewform?usp=dialog"
+                            target="_blank">Submit your query</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

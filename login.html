@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0C1A3A;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://wallpapercave.com/wp/wp2939993.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .login-container {
+      background-color: #192A4D;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      width: 400px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #354766;
+      border-radius: 8px;
+      background-color: #253859;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .login-container input::placeholder {
+      color: #A5B1CD;
+    }
+
+    .login-container a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .login-container button {
+      width: 100%;
+      background-color: #5285E8;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #354766;
+    }
+
+    .divider span {
+      margin: 0 10px;
+      color: #A5B1CD;
+      font-size: 0.9rem;
+    }
+
+    .social-login {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .social-login button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #253859;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .social-login button i {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+
+    .social-login button:hover {
+      background-color: #416fc0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Welcome back!</h2>
+    <form action="" method="post">
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="password" name="password" placeholder="Password (6+ characters)" required>
+      <a href="#">Forgot Password?</a>
+      <button type="submit" name="submit" >Log in</button>
+    </form>
+    <div class="divider"><span>or</span></div>
+    <div class="social-login">
+      <button>
+        <a href="https://support.apple.com/en-in/111001" target="_blank">
+          <i class="fa-brands fa-apple"></i> Connect with Apple
+        </a>
+      </button>
+      <button>
+        <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmail.google.com%2Fmail&ec=GAlAFw&hl=en-GB&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S824722603%3A1733658740062731&ddm=1"
+          target="_blank">
+          <i class="fa-brands fa-google"></i> Connect with Google
+        </a>
+      </button>
+      <button>
+        <a href="https://en-gb.facebook.com/login.php/" target="_blank">
+          <i class="fa-brands fa-facebook"></i> Connect with Facebook
+        </a>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

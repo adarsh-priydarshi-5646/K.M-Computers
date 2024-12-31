@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f0f4f8;
+      color: #2c3e50;
+      transition: background-color 0.3s ease;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: bold;
+      color: #2c3e50;
+      text-transform: capitalize;
+      transition: transform 0.5s ease;
+    }
+
+    p {
+      font-size: 16px;
+      color: #7f8c8d;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6c5ce7, #00b894);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    header h1 {
+      font-size: 42px;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    nav {
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #6c5ce7;
+    }
+
+    nav .logo {
+      margin-right: auto;
+      font-size: 24px;
+      font-weight: bold;
+      color: #6c5ce7;
+      display: flex;
+      align-items: center;
+    }
+
+    nav .logo i {
+      margin-right: 10px;
+    }
+
+
+    .services {
+      background-color: #ffffff;
+      padding: 60px 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: slideUp 1s ease-out;
+    }
+
+    .services .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .services .service-item {
+      text-align: center;
+      background-color: #fafafa;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .services .service-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .services .service-item img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+    }
+
+    .services .service-item h3 {
+      font-size: 20px;
+      color: #2c3e50;
+      margin: 10px 0;
+    }
+
+    .why-choose-us,
+    .testimonials,
+    .contact,
+    footer {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .cta-button {
+      background-color: #00b894;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #6c5ce7;
+      transform: scale(1.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Our Premium Services</h1>
+      <p>We specialize in laptops, laptop parts, and online services at Jan Seva Kendra.</p>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li class="logo"><i class="fas fa-laptop"></i> Our Services</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education section/education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <img src="https://images.moneycontrol.com/static-mcnews/2020/07/VivoBook-14-1.jpg" alt="Laptop Sales">
+          <h3>Laptop Sales</h3>
+          <p>We sell high-quality laptops with a variety of specifications to suit your needs.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://www.constructionworld.in/assets/uploads/14015a67b63111c2cd161c79c05f67e4e7cae.webp" alt="Laptop Manufacturing">
+          <h3>Laptop Manufacturing</h3>
+          <p>We manufacture custom laptops tailored to your requirements and budget.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://i.pinimg.com/originals/68/47/27/684727a43933f40a3ea594f1f1a08fb5.jpg" alt="Laptop Parts">
+          <h3>Laptop Parts</h3>
+          <p>We offer a wide range of laptop parts for replacement and repair purposes.</p>
+        </div>
+        <div class="service-item">
+          <img
+            src="https://networkencyclopedia.com/wp-content/uploads/2019/09/certificate-services-windows-server-1024x576.jpg"
+            alt="Certificate Services">
+          <h3>Certificate Services</h3>
+          <p>Birth, death, caste, and residence certificates.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/shutterstock_1504004246.jpg" alt="Pension Services">
+          <h3>Pension Services</h3>
+          <p>Old age, widow, and other pension schemes.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://legalmateindia.com/iseekans/2024/04/PAN-Card-Holders.png" alt="Pan Card Services">
+          <h3>PAN Card</h3>
+          <p>Quick and hassle-free PAN card application services.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://paytmblogcdn.paytm.com/wp-content/uploads/2023/05/Blog_Paytm_What-is-EPIC-Number-in-Voter-ID-Card.jpg" alt="Voter ID Services">
+          <h3>Voter ID</h3>
+          <p>Assistance with new voter ID card applications and corrections.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://www.informalnewz.com/wp-content/uploads/2023/10/Aadhar-Card-Holders-2.jpg" alt="Aadhaar Services">
+          <h3>Aadhaar Services</h3>
+          <p>Aadhaar card-related updates and assistance.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2024/7/437925870/DE/GO/HG/202005434/mobile-recharge-software-service.jpeg" alt="Recharge Services">
+          <h3>Recharge Services</h3>
+          <p>Mobile and DTH recharge services.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://blogassets.airtel.in/wp-content/uploads/2022/01/What-are-the-types-of-Utility-Bill.jpg" alt="Bill Payments">
+          <h3>Bill Payments</h3>
+          <p>Electricity bill payments and other utility services.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://www.smartpaymentbank.co.in/content/front/assets/img/bank-service/1.png" alt="Banking Services">
+          <h3>Banking Services</h3>
+          <p>Cash withdrawals and other financial transactions.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://www.avivaindia.com/sites/default/files/Types-of-Insurance.jpg" alt="Insurance Services">
+          <h3>Insurance</h3>
+          <p>Vehicle, health, life, and general insurance services.</p>
+        </div>
+
+        <div class="service-item">
+          <img src="https://i0.wp.com/www.india-briefing.com/news/wp-content/uploads/2021/11/MicrosoftTeams-image-6.jpg?fit=900%2C506&ssl=1" alt="Agriculture Services">
+          <h3>Agriculture Services</h3>
+          <p>Support for agriculture-related tasks and services.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://www.htfmarketintelligence.com/uploads/reports/16806040147762.jpg" alt="Travel Services">
+          <h3>Travel Services</h3>
+          <p>Ticket booking and travel-related assistance.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://thumbs.dreamstime.com/b/businessman-pushing-button-word-seo-over-blue-background-collage-web-content-optimization-standing-online-services-197381491.jpg" alt="Travel Services">
+          <h3>More Services</h3>
+          <p>More services for your convenience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 K.M Infotech All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
