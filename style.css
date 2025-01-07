@@ -1,3 +1,8 @@
+html{
+   
+    font-size:62.5%
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,16 +10,16 @@ body {
     background-color: #f8f9fa;
 }
 .logo{
-    top: 20px;
-    left: 20px;
+    top: 2rem;
+    left: 2rem;
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
     animation: fadeIn 2s ease-in-out;
 }
 
 .logo img {
-    width: 100px;
+    width: 10rem;
     height: auto;
     border-radius: 50%;
 }
@@ -22,14 +27,14 @@ body {
 .logo span {
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    font-size: 55px;
+    font-size: 5.5rem;
     color: orangered;
 }
 
 .logo h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: blueviolet;
 }
 
