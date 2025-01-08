@@ -1,6 +1,6 @@
-html{
-   
-    font-size:62.5%
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,7 +9,8 @@ body {
     padding: 0;
     background-color: #f8f9fa;
 }
-.logo{
+
+.logo {
     top: 2rem;
     left: 2rem;
     display: flex;
@@ -43,102 +44,78 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
     color: #333;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 
 .nav-links {
     list-style: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     display: flex;
     margin: 0;
     padding: 0;
 }
-.nav-links li a{
+
+.nav-links li a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 1.8rem;
     transition: color 0.3s, transform 0.3s;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.8rem;
 }
+
 .nav-links li {
-    margin: 0 10px;
-    
+    margin: 0 1rem;
+
 }
 
 .nav-links a {
     text-decoration: none;
     color: black;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.4rem;
     transition: background-color 0.3s;
 }
 
 .nav-links a:hover {
-    color:  orangered;
+    color: orangered;
     transform: scale(1.1);
 }
 
 .menu-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 2.4rem;
     background: none;
     border: none;
     color: black;
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links li {
-        text-align: center;
-        margin: 0;
-        padding: 10px 0;
-    }
-}
-
 .navbar .buttons {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .navbar .buttons button {
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -162,21 +139,25 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
 }
 
 .header {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .header h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
-    font-size: 46px;
+    font-size: 4.6rem;
     color: #333;
+}
+
+.header p {
+    font-size: 1.8rem;
 }
 
 .header h1 span {
@@ -186,43 +167,44 @@ body {
 .features {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 30px;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .feature {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 16px;
+    gap: 1rem;
+    font-size: 1.6rem;
     color: #333;
 }
 
 .search-bar {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .search-bar input {
     width: 60%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid orangered;
-    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid orangered;
+    border-radius: 0.5rem;
     color: orangered;
 }
 
 .brands1 {
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .brand1 {
     display: inline-block;
-    padding: 10px;
+    padding: 1rem;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -236,55 +218,55 @@ body {
 .footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 2rem 0;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 11.0rem;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 .footer-section {
     flex: 1;
-    margin: 15px;
+    margin: 1.5rem;
 }
 
 .footer-section h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer-section p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.6;
 }
 
 .footer-section ul {
     list-style: none;
     padding: 0;
-    margin-left: 150px;
+    margin-left: 15rem;
 }
 
 .footer-section ul li {
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
 .footer-section ul li a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
 }
 
 .footer-section ul li a i {
-    margin-right: 8px;
+    margin-right: 0.8rem;
 }
 
 .footer-section ul li a:hover {
@@ -294,12 +276,12 @@ body {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .social-icons a {
     color: white;
-    font-size: 24px;
+    font-size: 2.4rem;
     transition: color 0.3s;
 }
 
@@ -308,43 +290,32 @@ body {
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-    border-top: 1px solid #555;
-    padding-top: 10px;
-}
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin: 20px 0;
-    }
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    border-top: 0.1rem solid #555;
+    padding-top: 1rem;
 }
 
 .section {
-    padding: 20px;
+    padding: 2rem;
 }
 
 .feature {
-    max-width: 200px;
+    max-width: 20rem;
     text-align: center;
 }
 
 .feature img {
-    height: 50px;
-    margin-bottom: 10px;
+    height: 5rem;
+    margin-bottom: 1rem;
 }
 
 .top-selling {
-    padding: 40px 20px;
+    padding: 4rem 2rem;
 }
 
 .top-selling h2 {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -352,57 +323,57 @@ body {
 .models {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
     overflow-x: auto;
-    padding: 10px 10;
+    padding: 1rem 1rem;
 }
 
 .brand,
 .model {
     text-align: center;
     flex: 0 0 auto;
-    width: 100px;
+    width: 10rem;
 }
 
 .brand img,
 .model img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .navigation {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .navigation button {
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: #007bff;
     color: white;
     cursor: pointer;
 }
 
 .section {
-    padding: 20px;
+    padding: 2rem;
 }
 
 .latest-laptops,
 .trending-laptops {
-    padding: 40px 20px;
+    padding: 4rem 2rem;
 }
 
 .latest-laptops h2,
 .trending-laptops h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-align: center;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
@@ -410,123 +381,113 @@ body {
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    padding: 10px 0;
+    padding: 1rem 0;
     scrollbar-width: thin;
 }
 
-/* Animation for border color changing */
 @keyframes borderAnimation {
     0% {
         border-color: transparent;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     }
 
     25% {
         border-color: #ff5733;
-        /* Red */
-        box-shadow: 0 0 15px rgba(255, 87, 51, 0.5);
+        box-shadow: 0 0 1.5rem rgba(255, 87, 51, 0.5);
     }
 
     50% {
         border-color: #33ff57;
-        /* Green */
-        box-shadow: 0 0 20px rgba(51, 255, 87, 0.5);
+        box-shadow: 0 0 2rem rgba(51, 255, 87, 0.5);
     }
 
     75% {
         border-color: #3357ff;
-        /* Blue */
-        box-shadow: 0 0 25px rgba(51, 87, 255, 0.5);
+        box-shadow: 0 0 2.5rem rgba(51, 87, 255, 0.5);
     }
 
     100% {
         border-color: #ff33ff;
-        /* Pink */
-        box-shadow: 0 0 30px rgba(255, 51, 255, 0.5);
+        box-shadow: 0 0 3rem rgba(255, 51, 255, 0.5);
     }
 }
 
-  
-  /* Apply the initial styles to the carousel item */
-  .carousel-item {
-      margin-left: 20px;
-      text-align: center;
-      flex: 0 0 auto;
-      width: 220px;
-      height: 350px;
-      margin-right: 15px;
-      border: 3px solid transparent;  /* Initial transparent border */
-      border-radius: 5px;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-sizing: border-box;
-      cursor: pointer;
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-  }
-  
-  /* On hover, apply multi-colored border animation and color changes */
-  .carousel-item:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      animation: borderAnimation 1.2s infinite; /* Apply the border animation */
-  }
-  
-  /* Carousel Item Image Styling */
-  .carousel-item img {
-      max-width: 100%;
-      max-height: 150px;
-      margin-bottom: 10px;
-      object-fit: contain;
-  }
-  
-  /* Other specific styles for buttons inside carousel items */
-  .carousel-item .buttons {
-      margin-top: 10px;
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-  }
-  
-  .carousel-item button {
-      padding: 10px 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 14px;
-  }
-  
-  .carousel-item .shop-btn {
-      background-color: #ff9900;
-      color: #fff;
-  }
-  
-  .carousel-item .details-btn {
-      background-color: #ddd;
-      color: #333;
-  }
-  
-  .carousel-item button:hover {
-      opacity: 0.8;
-  }
-  
+.carousel-item {
+    margin-left: 2rem;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 22.0rem;
+    height: 35.0rem;
+    margin-right: 1.5rem;
+    border: 0.3rem solid transparent;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+    animation: borderAnimation 1.2s infinite;
+}
+
 .carousel-item img {
     max-width: 100%;
-    max-height: 150px;
-    margin-bottom: 10px;
+    max-height: 15.0rem;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.carousel-item .buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.carousel-item button {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.carousel-item .shop-btn {
+    background-color: #ff9900;
+    color: #fff;
+}
+
+.carousel-item .details-btn {
+    background-color: #ddd;
+    color: #333;
+}
+
+.carousel-item button:hover {
+    opacity: 0.8;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 15.0rem;
+    margin-bottom: 1rem;
     object-fit: contain;
 }
 
 .carousel-item h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 .carousel-item p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -553,14 +514,14 @@ body {
 .navigation {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .navigation button {
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: #007bff;
     color: white;
     cursor: pointer;
@@ -573,83 +534,85 @@ body {
 
 .main {
     flex: 1;
-    padding: 20px;
-    
+    padding: 2rem;
+
 }
 
 .main h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
     text-align: center;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    gap: 2rem;
 }
-  
+
 .category {
     text-align: center;
 }
 
 .category img {
-    width: 150px;
-    height: 150px;
+    width: 15rem;
+    height: 15rem;
     object-fit: contain;
     border-radius: 50%;
     background: #f9f9f9;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    border: 2px solid #ddd;
-    margin-bottom: 10px;
+    border: .2rem solid #ddd;
+    margin-bottom: 1rem;
     cursor: pointer;
 
 }
 
 .category p {
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top: 1rem;
+    font-size: 1.4rem;
 }
+
 .price {
     color: green;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .buy-btn {
     background-color: orange;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .buy-btn:hover {
     background-color: orangered;
 }
+
 .carousel-item .buttons {
-    margin-top: 10px;
+    margin-top: 1rem;
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     justify-content: center;
 }
 
 .carousel-item button {
-    padding: 10px 10px;
+    padding: 1rem 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: .5rem;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .carousel-item .shop-btn {
